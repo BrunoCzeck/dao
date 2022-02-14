@@ -1,7 +1,5 @@
 <?php 
-
-
-require 'config.php';
+require 'conexao/config.php';
 $id = filter_input(INPUT_GET, 'id');
 
 if($id){

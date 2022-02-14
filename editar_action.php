@@ -1,6 +1,6 @@
 <?php 
 
-require 'config.php';
+require 'conexao/config.php';
 include 'include/UsuarioDaoMysql.php';
 
 $usuarioDao = new UsuarioDaoMysql($pdo);
@@ -17,15 +17,5 @@ if ($id && $name && $email){
       $usuarioDao->update($usuario);
       header("Location: index.php");
 }
-
-
-
-
-      /*    exit;
-} else {
-      header("Location: editar.php");
-      exit;
-} 
- */
 
 ?>

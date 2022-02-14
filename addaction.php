@@ -1,6 +1,6 @@
 <?php
 
-require 'config.php';
+require 'conexao/config.php';
 include 'include/UsuarioDaoMysql.php';
 
 $usuarioDao = new UsuarioDaoMysql($pdo);
